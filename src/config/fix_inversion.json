@@ -50,10 +50,6 @@
             ]
         },
         {
-            "url": "betterexplained.com",
-            "noinvert": "img.tex"
-        },
-        {
             "url": [
                 "bit-tech.net",
                 "forums.bit-tech.net"
@@ -88,7 +84,6 @@
                 ".minibrowse-mobile-paddles-container"
             ],
             "noinvert": [
-                ".extra-info .avatar",
                 ".tt-crop > .tinythumb"
             ]
         },
@@ -133,16 +128,10 @@
             "invert": [
                 "._3ixn, ._2teu, .uiStreamStory",
                 ".userContentWrapper canvas, ._4lqu, ._4lqt",
-                "._24ws, ._1z0-",
-                "._19eb"
+                "._24ws, ._1z0-"
             ],
             "noinvert": ".uiStreamStory video",
-            "removebg": "._4d3w .stageWrapper",
-            "rules": "._2s1x ._2s1y { background: #9BB5E8 !important; color: black !important; border-bottom-color: #92A6CA !important; }"
-        },
-        {
-            "url": "feynmanlectures.caltech.edu",
-            "noinvert": "img"
+            "removebg": "._4d3w .stageWrapper"
         },
         {
             "url": "gigaom.com",
@@ -152,18 +141,10 @@
             "url": "github.com",
             "invert": [
                 ".jumbotron-codelines",
+                ".bg-gray-light",
                 ".bg-gray-dark",
-                ".bg-gray-dark .form-group",
-                ".header-logo-invertocat, .notification-indicator",
-                ".label, .label-color"
-            ],
-            "rules": [
-                "header { background-color: #dae1e7 !important; }",
-                ".Header .header-search-wrapper { background-color: rgba(0, 0, 0, 0.125) !important; }",
-                "header, .HeaderNavlink, .Header .header-search-input, .Header .header-search-input::placeholder { color: rgba(0, 0, 0, 0.75) !important; }",
-                ".Header .header-search-scope { color: rgba(0, 0, 0, 0.75) !important; border-right-color: #ccd7e1 !important; }",
-                ".select-menu-item.navigation-focus, .select-menu-item.navigation-focus.selected, .select-menu-item.navigation-focus.select-menu-action, .select-menu-item.navigation-focus .description-inline { color: black !important; background: #93c6ff !important }",
-                ".select-menu-item.navigation-focus>.octicon, .select-menu-item.navigation-focus.selected>.octicon, .select-menu-item.navigation-focus.select-menu-action>.octicon, .select-menu-item.navigation-focus .description-inline>.octicon { color: black !important; }"
+                ".bg-gray-light .btn-block",
+                ".bg-gray-dark .form-group"
             ]
         },
         {
@@ -176,8 +157,7 @@
             ],
             "noinvert": [
                 ".irc_mi, .irc_rii, .irc_mut, .act-icon-dark-gray, .amI, .amJ, .adk, .adj, [src*='ic_'], [src*='black']",
-                "input[style*='data:image']",
-                "img[src*='/books/content?']"
+                "input[style*='data:image']"
             ],
             "rules": [
                 ".pI { background: rgba(255,255,255,.7) !important; }",
@@ -210,16 +190,6 @@
             "rules": "html { height: auto !important; }"
         },
         {
-            "url": "khanacademy.org",
-            "invert": [
-                ".task-container .modal-backdrop"
-            ]
-        },
-        {
-            "url": "libretexts.org",
-            "noinvert": "img"
-        },
-        {
             "url": "lifehacker.com",
             "invert": ".videoCube a .thumbBlock",
             "rules": "html { height: auto !important; }"
@@ -231,6 +201,12 @@
             ],
             "noinvert": [
                 "#top-header *, #responsive-nav-scrollable *"
+            ]
+        },
+        {
+            "url": "mail.google.com",
+            "rules": [
+                "iframe"
             ]
         },
         {
@@ -251,7 +227,8 @@
                 "mathprofi.net"
             ],
             "noinvert": [
-                "p img"
+                "p > em > img",
+                "p > img"
             ]
         },
         {
@@ -261,12 +238,6 @@
         {
             "url": "messenger.com",
             "invert": "._4tsk"
-        },
-        {
-            "url": "mp.weixin.qq.com/wiki",
-            "noinvert": [
-                ".res_iframe"
-            ]
         },
         {
             "url": [
@@ -357,6 +328,10 @@
             ]
         },
         {
+            "url": "paradoxfan.com",
+            "invert": "div#header, div.news.normaltext"
+        },
+        {
             "url": "play.afreecatv.com",
             "invert": "#afreecatv_player"
         },
@@ -386,7 +361,8 @@
         },
         {
             "url": "reddit.com",
-            "invert": "#header-img"
+            "invert": "a, li, #header-img",
+            "noinvert": "p > a, a > *"
         },
         {
             "url": [
@@ -399,12 +375,6 @@
             "noinvert": [
                 "#navbar a > img",
                 "#nav"
-            ]
-        },
-        {
-            "url": "scotch.io",
-            "invert": [
-                ".language-js, .language-javascript"
             ]
         },
         {
@@ -516,7 +486,7 @@
         {
             "url": "vk.com",
             "invert": [
-                "#video_player, .mv_playlist, .page_header_cont, .page_album_title"
+                "#video_player, .mv_playlist, .page_header_cont"
             ],
             "noinvert": [
                 "#video_player *, .mv_playlist *, .page_header_cont *"
@@ -524,11 +494,6 @@
             "removebg": [
                 ".mv_layer_bg"
             ]
-        },
-        {
-            "url": "vocabolario.sns.it",
-            "noinvert": "body[background]",
-            "invert": "img[src]"
         },
         {
             "url": "vuejs.org",
@@ -560,7 +525,7 @@
             ]
         },
         {
-            "url": "yandex.*",
+            "url": "yandex.ru",
             "invert": [
                 ".afisha__content",
                 ".b-ico",
@@ -573,8 +538,7 @@
                 ".schedule__icon",
                 ".stream-intro__content",
                 ".zen__item-domain",
-                ".zen__item-title",
-                "[class*='icon_moon_']"
+                ".zen__item-title"
             ],
             "noinvert": [
                 ".afisha__film-image",
